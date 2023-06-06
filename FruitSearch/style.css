@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+:focus {
+ /* TODO */
+  
+}
+
+body {
+  background: linear-gradient(to right, rgb(255, 166, 22), rgb(255, 78, 13));
+
+  display:flex;
+  
+  justify-content: center;
+  
+  align-items: center;
+
+  height: 100vh;
+
+  margin: 0;
+}
+
+input {
+ /* TODO */
+ width: 100%;
+ padding: 8px 30px;
+ background: rgb(255, 255, 255);
+}
+
+.search-container {
+/* TODO */
+/* gradient made using https://cssgradient.io */
+
+  width: 25%;
+  position: relative;
+  
+}
+.search-container input,
+.search-container .suggestions {
+  /* TODO */
+  font-weight:bold;
+  cursor: pointer;
+  align-items: left;
+  box-sizing: border-box;
+}
+.search-container input {
+ /* TODO */
+ width: 100%;
+ color: black;
+}
+.search-container .suggestions {
+   /* TODO */
+   top: 70px;
+   list-style-type: none;
+   margin:0;
+   padding:0;
+   width: 100%;
+   max-height: 200px;
+   overflow-y: auto;
+   position: absolute;
+   opacity: 0.8;
+   background-color: rgba(128, 128, 128, 0.3);
+}
+
+ul {
+  list-style: none;
+}
+
+ul.has-suggestions {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+ul li {
+  padding: 10px;
+  list-style: none;
+  width: 100%;
+  box-sizing: border-box;
+  cursor:pointer;
+  position:relative;
+}
+
+.suggestions li:hover {
+  cursor:pointer;
+  background-color:#dddddd  ;
+}
